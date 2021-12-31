@@ -1,0 +1,213 @@
+/* EACH CSS RULE BELOW SHOULD BE PAGE 1 TOP DOWN, THEN PAGE 2 TOP DOWN ETC */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/* ############################################################ */
+/* INDEX PAGE (MAIN LANDING PAGE) */
+
+* {
+    margin: 0%;     /* Stops a white margin on top bar of screen */
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+/* MAKES THE BACKGROUND IMAGE */
+.indexBackground {
+    background: url(./images/Stockport-Viaduct.jpeg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+/* THE PAGE SELECTOR BUTTONS DEFINITION */
+a.button{
+    display:inline-block;
+    padding: 0.8em 2.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:500;
+    color:#FFFFFF;
+    background-color:rgb(74, 165, 89);
+    text-align:center;
+    transition: all 1.2s;
+    margin-top: 20px;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.welcome {
+    color: white;
+    margin-top: 250px;
+    margin-left: 300px;
+    font-family: 'Caveat', cursive;
+    font-size: 50pt;
+    transition: all 3.0s;
+}
+
+
+/* ############################################################ */
+/* ABOUT ME PAGE */  
+
+.aboutMeBackground {
+    background-color: rgb(163, 78, 111)
+}
+
+.about_h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 35pt;
+}
+
+.ian_photo {
+    height: 20px;
+    width: 10px;
+    justify-content:left;
+}
+.about_container {
+    display: flex;
+    font-size: 18px;
+}
+
+.restOfAbout {
+    display: flex;
+    font-size: 18px;
+    flex-direction: column
+}
+
+/* THE PAGE SELECTOR BUTTONS DEFINITION */
+a.button{
+    display:inline-block;
+    padding: 0.8em 2.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:500;
+    color:#FFFFFF;
+    background-color:rgb(74, 165, 89);
+    text-align:center;
+    transition: all 1.2s;
+    margin-top: 20px;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ianCoding {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.codingLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+/* .dice {
+    display: flex;
+    justify-content: left;
+}
+
+.iOS {
+    display: flex;
+    justify-content: center;
+}
+
+.python {
+    display: flex;
+    justify-content: right;
+} */
+
+
+/* ############################################################ */
+/* CONTACT ME PAGE */
+
+.contactBackground {
+    background-color: rgb(158, 158, 163);    
+}
+
+.location {
+    font-size: 18px;
+}
+
+.email_logo p {
+    font-size: 20px;
+}
+
+.distance {
+    font-size: larger;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.mapContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+
+
+/* ############################################################ */
+/* GALLERY PAGE */
+
+.galleryMeBackground {
+    background-color:cornflowerblue
+
+}
+
+
+/* ############################################################ */
+/* STOCKPORT PAGE */
+
+/* THE BELOW IMAGE IS SUPPOSED TO FILL THE BACKGROUND AND THE TEXT FLOWS OVER.  */
+/* NOT BEEN ABLE TO MAKE THAT WORK THOUGH, IMAGE AT TOP THEN GETS SCROLLED OVER */
+.stockportMapBackground {
+    background: url(./images/stockport_map_background.jpeg) repeat center center fixed; 
+    background-size: 100%;
+}
+
+/* THIS GIVES BACKGROUND MAP IMAGE AN OPACITY */
+.stockportMapBackground::after {
+    content: "";
+    background: url(./images/stockport_map_background.jpeg) repeat center center fixed;
+    background-size: 100%;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+
+
+
+
+
